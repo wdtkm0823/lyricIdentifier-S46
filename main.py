@@ -4,9 +4,8 @@ from bs4 import BeautifulSoup
 import time
 import os
 
-main_dir = os.path.join(
-    r"C:\Users\twada\Documents\devJourney\lyricIdentifier-S46", "LYLICS"
-)
+base_dir = os.path.dirname(__file__)
+main_dir = os.path.join(base_dir, "LYLICS")
 
 artist_id_dict = {"乃木坂46": 12550, "櫻坂46": 29512, "日向坂46": 22163}
 domain = "https://www.uta-net.com/artist/"
